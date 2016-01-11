@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="@dimen/padding"
+    style="@style/backgroundBlue">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="@string/settings"
+            android:id="@+id/title"
+            android:layout_marginTop="40dp"
+            android:layout_centerHorizontal="true"
+            style="@style/title"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="@string/why_stop"
+            android:id="@+id/why_stop_label"
+            android:layout_marginTop="40dp"
+            android:layout_below="@+id/title"
+            android:layout_alignParentLeft="true"
+            android:focusable="true"
+            android:focusableInTouchMode="true"	/>
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/why_stop_input"
+            android:layout_below="@+id/why_stop_label"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:ems="10"
+            style="@style/editText"
+            android:layout_alignRight="@+id/why_stop_label"
+            android:layout_alignEnd="@+id/why_stop_label"
+            android:hint="Varför vill du sluta spela?" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="@string/how_much"
+            android:id="@+id/how_much_label"
+            android:layout_below="@+id/why_stop_input"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginTop="30dp"
+            android:gravity="left" />
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:id="@+id/how_much_input"
+            android:layout_below="@+id/how_much_label"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            style="@style/editText"
+            android:layout_alignRight="@+id/why_stop_input"
+            android:layout_alignEnd="@+id/why_stop_input"
+            android:editable="false"
+            android:hint="T.ex. 500 kr"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="@string/how_long"
+            android:id="@+id/how_long_label"
+            android:layout_below="@+id/how_much_input"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginTop="30dp" />
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:id="@+id/how_long_input"
+            android:layout_below="@+id/how_long_label"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            style="@style/editText"
+            android:layout_alignRight="@+id/how_much_input"
+            android:layout_alignEnd="@+id/how_much_input"
+            android:editable="false"
+            android:hint="T.ex. 20 h" />
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="@string/last_played"
+            android:id="@+id/last_played_label"
+            android:layout_below="@+id/how_long_input"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginTop="30dp"/>
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:id="@+id/last_played_input"
+            android:layout_below="@+id/last_played_label"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:editable="false"
+            style="@style/editText"
+            android:layout_alignRight="@+id/how_long_input"
+            android:layout_alignEnd="@+id/how_long_input"
+            android:hint="T.ex. 2015-01-02 20:00"/>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="OK"
+            android:id="@+id/finish"
+            android:layout_below="@+id/last_played_input"
+            android:layout_marginTop="40dp"
+            android:layout_centerHorizontal="true"
+            style="@style/buttonRed"/>
+    </RelativeLayout>
+</ScrollView>

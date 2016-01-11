@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="@dimen/padding"
+    style="@style/backgroundBlue"
+    android:gravity="center">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/counter_wrapper_big"
+        android:layout_centerHorizontal="true"
+        android:clickable="true"
+        android:padding="@dimen/padding"
+        android:addStatesFromChildren="true"
+        style="@style/backgroundBlueClickable" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/title"
+            android:text="@string/gamble_free_for"
+            style="@style/title"/>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/title"
+            android:id="@+id/counter_wrapper"
+            android:layout_marginTop="8dp">
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/days_wrapper"
+                android:minWidth="70dp"
+                style="@style/backgroundRed"
+                android:gravity="center">
+
+                <TextView
+                    android:layout_width="50dp"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/days"
+                    android:text="0"
+                    android:layout_centerHorizontal="true"
+                    style="@style/title"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/days_label"
+                    android:layout_below="@+id/days"
+                    android:layout_centerHorizontal="true"
+                    android:text="@string/days" />
+
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                style="@style/backgroundRed"
+                android:layout_toRightOf="@+id/days_wrapper"
+                android:id="@+id/hours_wrapper"
+                android:layout_marginLeft="3dp"
+                android:minWidth="70dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/hours"
+                    android:text="0"
+                    android:layout_centerHorizontal="true"
+                    style="@style/title" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/hours_label"
+                    android:layout_below="@+id/hours"
+                    android:text="@string/hours"
+                    android:layout_centerHorizontal="true"/>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                style="@style/backgroundRed"
+                android:layout_toRightOf="@+id/hours_wrapper"
+                android:id="@+id/minutes_wrapper"
+                android:layout_marginLeft="3dp"
+                android:minWidth="70dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/minutes"
+                    android:text="0"
+                    android:layout_centerHorizontal="true"
+                    style="@style/title"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/minutes_label"
+                    android:layout_below="@+id/minutes"
+                    android:text="@string/minutes"
+                    android:layout_centerHorizontal="true"/>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                style="@style/backgroundRed"
+                android:layout_toRightOf="@+id/minutes_wrapper"
+                android:id="@+id/seconds_wrapper"
+                android:layout_marginLeft="3dp"
+                android:minWidth="70dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/seconds"
+                    android:text="0"
+                    android:layout_centerHorizontal="true"
+                    style="@style/title"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/seconds_label"
+                    android:layout_below="@+id/seconds"
+                    android:text="@string/seconds"
+                    android:layout_centerHorizontal="true"/>
+
+            </RelativeLayout>
+
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/counter_wrapper_big"
+        android:id="@+id/money_saved_label"
+        android:layout_centerHorizontal="true"
+        android:text=""
+        android:layout_marginTop="43dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/money_saved_label"
+        android:id="@+id/money_saved"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        style="@style/title"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/time_saved"
+        android:layout_below="@+id/money_saved"
+        android:layout_centerHorizontal="true"
+        android:gravity="center"
+        android:layout_marginTop="113dp" />
+
+</RelativeLayout>

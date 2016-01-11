@@ -1,0 +1,56 @@
+<resources>
+
+    <!-- Base application theme. -->
+
+    <style name="whiteText" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="android:textSize">15sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">#FFFFFF</item>
+        <item name="android:gravity">center</item>
+        <item name="android:shadowColor">#000000</item>
+        <item name="android:shadowDx">1</item>
+        <item name="android:shadowDy">1</item>
+        <item name="android:shadowRadius">0.6</item>
+    </style>
+
+    <style name="AppTheme" parent="whiteText">
+        <item name="colorPrimaryDark">#008DC9</item>
+    </style>
+
+    <style name="title">
+        <item name="android:textSize">28dp</item>
+        <item name="android:layout_centerHorizontal">true</item>
+    </style>
+
+    <style name="editText">
+        <item name="android:background">@drawable/edit_text</item>
+        <item name="android:textColor">#FFFFFF</item>
+        <item name="android:layout_marginTop">6dp</item>
+        <item name="android:textCursorDrawable">@null</item>
+        <item name="android:padding">5dp</item>
+
+        <item name="android:textColorHint">#BBB</item>
+    </style>
+
+
+
+    <style name="buttonRed" parent="whiteText">
+        <item name="android:background">@drawable/button_red</item>
+        <item name="android:padding">10dip</item>
+    </style>
+
+    <style name="backgroundRed" parent="whiteText">
+        <item name="android:background">@drawable/background_red</item>
+        <item name="android:padding">10dip</item>
+    </style>
+
+    <style name="backgroundBlue" parent="@android:style/Widget.Button">
+        <item name="android:background">@drawable/background_blue</item>
+        <item name="android:gravity">top</item>
+    </style>
+
+    <style name="backgroundBlueClickable" parent="@style/backgroundBlue">
+        <item name="android:background">@drawable/background_blue_clickable</item>
+    </style>
+
+</resources>

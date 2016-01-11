@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="@dimen/padding"
+    style="@style/backgroundBlue">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:id="@+id/question_title"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="46dp"
+        android:text="@string/question1_title"
+        android:textSize="24dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="@string/question1"
+        android:id="@+id/question_content"
+        android:layout_below="@+id/question_title"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="32dp"
+        android:layout_marginLeft="14dp"
+        android:layout_marginRight="8dp"
+        android:gravity="center"
+        android:height="100dp" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/option1"
+        android:id="@+id/option1"
+        android:layout_below="@+id/question_content"
+        android:layout_marginTop="35dp"
+        android:layout_alignRight="@+id/option2"
+        android:layout_alignEnd="@+id/option2"
+        android:layout_alignLeft="@+id/option2"
+        android:layout_alignStart="@+id/option2"
+        style="@style/buttonRed" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/option2"
+        android:id="@+id/option2"
+        android:layout_below="@+id/option1"
+        android:layout_marginTop="10dp"
+        android:layout_alignLeft="@+id/option3"
+        android:layout_alignStart="@+id/option3"
+        android:layout_alignRight="@+id/option3"
+        android:layout_alignEnd="@+id/option3"
+        style="@style/buttonRed" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/option3"
+        android:id="@+id/option3"
+        android:layout_below="@+id/option2"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        style="@style/buttonRed" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/option4"
+        android:id="@+id/option4"
+        android:layout_below="@+id/option3"
+        android:layout_marginTop="10dp"
+        android:layout_alignLeft="@+id/option3"
+        android:layout_alignStart="@+id/option3"
+        android:layout_alignRight="@+id/option3"
+        android:layout_alignEnd="@+id/option3"
+        style="@style/buttonRed" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/option5"
+        android:id="@+id/option5"
+        android:layout_below="@+id/option4"
+        android:layout_marginTop="10dp"
+        android:layout_alignLeft="@+id/option4"
+        android:layout_alignStart="@+id/option4"
+        android:layout_alignRight="@+id/option4"
+        android:layout_alignEnd="@+id/option4"
+        style="@style/buttonRed" />
+
+
+</RelativeLayout>

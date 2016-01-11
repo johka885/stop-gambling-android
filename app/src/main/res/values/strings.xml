@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- Global strings -->
+    <string name="storagekey">vendolink.stopgambling</string>
+    <string name="app_name">Sluta spela</string>
+    <string name="settings">Inställningar</string>
+    <string name="ok">OK</string>
+    <string name="cancel">Avbryt</string>
+
+    <!-- Settings screen -->
+    <string name="why_stop">Jag vill sluta spela för att:</string>
+    <string name="how_long">Hur många timmar spelar du varje vecka?</string>
+    <string name="last_played">När spelade du senast?</string>
+    <string name="how_much">Hur mycket pengar förlorar du på spel varje månad?</string>
+
+    <!-- Initial start screen -->
+    <string name="welcome">Välkommen</string>
+    <string name="welcome_description">Här är appen för dig som vill sluta spela. Att bli av med ditt spelberoende kan vara enklare än du tror.</string>
+
+    <string name="test_yourself">Testa dig själv - är du spelberoende?</string>
+    <string name="start_test">Starta testet</string>
+
+    <!-- Test screen -->
+    <string name="question1_title">Upptagenhet</string>
+    <string name="question1">Jag tänker på tidigare spelupplevelser, när jag ska spela nästa gång eller hur jag ska skaffa fram pengar att spela med.</string>
+
+    <string name="question2_title">Tolerans</string>
+    <string name="question2">Jag behöver satsa större och större summor för att uppnå den önskade spänningseffekten.</string>
+
+    <string name="question3_title">Kontroll</string>
+    <string name="question3">Jag har misslyckats med att begränsa eller sluta upp med ditt spelande.</string>
+
+    <string name="question4_title">Abstinens</string>
+    <string name="question4">Jag bir rastlös eller irriterad när jag inte spelar.</string>
+
+    <string name="question5_title">Flykt</string>
+    <string name="question5">Jag splear för att slippa tänka på problem eller för att slippa känna skuld, ångest eller depression.</string>
+
+    <string name="question6_title">Jaga förluster</string>
+    <string name="question6">Jag återvänder ofta efter en förlust för att revanschera mig.</string>
+
+    <string name="question7_title">Lögner</string>
+    <string name="question7">Jag ljuger för familj och vänner för att dölja vidden av mitt spelande.</string>
+
+    <string name="question8_title">Sociala konsekvenser</string>
+    <string name="question8">Jag har äventyrat eller förlorat en viktig personlig relation, anställing eller utbildningsmöjlighet på grund av mitt spelande.</string>
+
+    <string name="question9_title">Ekonomiskt beroende</string>
+    <string name="question9">Jag förlitar mig på att andra kan ordna fram pengar för att lösa en ekonomisk kris som uppstått på grund av mitt spelande.</string>
+
+    <string name="option1">Stämmer precis</string>
+    <string name="option2">Stämmer ganska bra</string>
+    <string name="option3">Stämmer varken bra eller dåligt</string>
+    <string name="option4">Stämmer ganska dåligt</string>
+    <string name="option5">Stämmer mycket dåligt</string>
+
+    <!-- Result screen -->
+    <string name="danger">VARNING</string>
+    <string name="congrats">Grattis</string>
+    <string name="addicted">Du har ett stort beroende av att spela. \n\nKlicka fortsätt för att få hjälp med att kontrollera ditt spelande.</string>
+    <string name="partly_addicted">Du ligger i riskzonen för att bli spelberoende. \n\nDen här appen kan hjälpa dig att se hur mycket tid och pengar du lägger ner på ditt spelande.</string>
+    <string name="not_addicted">Ditt spelande är inget större problem i dagsläget. \n\nKlicka fortsätt om du ändå vill få bättre kontroll på ditt spelande.</string>
+    <string name="next">Forstätt</string>
+
+    <!-- Main screen -->
+    <string name="seconds">sek</string>
+    <string name="minutes">min</string>
+    <string name="hours">timmar</string>
+    <string name="days">dagar</string>
+    <string name="gamble_free_for">Du har varit spelfri i</string>
+    <string name="during_this_time">Under tiden har du sparat</string>
+
+    <!-- Item Picker Amount -->
+    <string name="item_picker_amount_1">0</string>
+    <string name="item_picker_amount_2">100</string>
+    <string name="item_picker_amount_3">200</string>
+    <string name="item_picker_amount_4">300</string>
+    <string name="item_picker_amount_5">400</string>
+    <string name="item_picker_amount_6">500</string>
+    <string name="item_picker_amount_7">750</string>
+    <string name="item_picker_amount_8">1000</string>
+    <string name="item_picker_amount_9">1500</string>
+    <string name="item_picker_amount_10">2000</string>
+    <string name="item_picker_amount_11">2500</string>
+    <string name="item_picker_amount_12">3000</string>
+    <string name="item_picker_amount_13">4000</string>
+    <string name="item_picker_amount_14">5000</string>
+    <string name="item_picker_amount_15">Annat</string>
+
+    <string name="currency">kr</string>
+
+    <!-- Item Picker Time -->
+    <string name="item_picker_time_1">0</string>
+    <string name="item_picker_time_2">5</string>
+    <string name="item_picker_time_3">10</string>
+    <string name="item_picker_time_4">15</string>
+    <string name="item_picker_time_5">20</string>
+    <string name="item_picker_time_6">25</string>
+    <string name="item_picker_time_7">30</string>
+    <string name="item_picker_time_8">35</string>
+    <string name="item_picker_time_9">40</string>
+    <string name="item_picker_time_10">50</string>
+    <string name="item_picker_time_11">60</string>
+    <string name="item_picker_time_12">70</string>
+    <string name="item_picker_time_13">80</string>
+    <string name="item_picker_time_14">90</string>
+    <string name="item_picker_time_15">Annat</string>
+
+    <string name="hours_abbr">h</string>
+</resources>
