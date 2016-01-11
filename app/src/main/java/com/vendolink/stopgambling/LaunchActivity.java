@@ -29,9 +29,9 @@ public class LaunchActivity extends LeanplumFragmentActivity {
         setContentView(R.layout.activity_launch);
 
         if (BuildConfig.DEBUG) {
-            Leanplum.setAppIdForDevelopmentMode("app_MT9FrXRti5aPs9a5ZkRuRTqDgHf3xkDhMHxc9zVfcMQ", "dev_NRT50GZ5hVHclrzOsMRbr0o3kmFnO8AKpJa3E6pdIBE");
+            Leanplum.setAppIdForDevelopmentMode(getString(R.string.leamplum_appkey), getString(R.string.leamplum_devkey));
         } else {
-            Leanplum.setAppIdForProductionMode("app_MT9FrXRti5aPs9a5ZkRuRTqDgHf3xkDhMHxc9zVfcMQ", "prod_O4Qsm7KDyUE0JqnRxUaACsHRlCRj2D4ABI8AP7kYnlw");
+            Leanplum.setAppIdForProductionMode(getString(R.string.leamplum_appkey), getString(R.string.leamplum_prodkey));
         }
 
         Leanplum.enableVerboseLoggingInDevelopmentMode();
