@@ -70,7 +70,10 @@ public class SettingsActivity extends ActionBarActivity implements ItemPickerDia
         howMuchItems.add(new ItemPickerDialogFragment.Item(getString(R.string.item_picker_amount_12) + " " + getString(R.string.currency), parseInt(getString(R.string.item_picker_amount_12))));
         howMuchItems.add(new ItemPickerDialogFragment.Item(getString(R.string.item_picker_amount_13) + " " + getString(R.string.currency), parseInt(getString(R.string.item_picker_amount_13))));
         howMuchItems.add(new ItemPickerDialogFragment.Item(getString(R.string.item_picker_amount_14) + " " + getString(R.string.currency), parseInt(getString(R.string.item_picker_amount_14))));
-        //howMuchItems.add(new ItemPickerDialogFragment.Item(getString(R.string.item_picker_amount_15), parseInt(getString(R.string.item_picker_amount_15))));
+        howMuchItems.add(new ItemPickerDialogFragment.Item(getString(R.string.item_picker_amount_15) + " " + getString(R.string.currency), parseInt(getString(R.string.item_picker_amount_15))));
+        howMuchItems.add(new ItemPickerDialogFragment.Item(getString(R.string.item_picker_amount_16) + " " + getString(R.string.currency), parseInt(getString(R.string.item_picker_amount_16))));
+        howMuchItems.add(new ItemPickerDialogFragment.Item(getString(R.string.item_picker_amount_17) + " " + getString(R.string.currency), parseInt(getString(R.string.item_picker_amount_17))));
+
 
         howLongItems.add(new ItemPickerDialogFragment.Item(getString(R.string.item_picker_time_1) + " " + getString(R.string.hours_abbr), parseInt(getString(R.string.item_picker_time_1))));
         howLongItems.add(new ItemPickerDialogFragment.Item(getString(R.string.item_picker_time_2) + " " + getString(R.string.hours_abbr), parseInt(getString(R.string.item_picker_time_2))));

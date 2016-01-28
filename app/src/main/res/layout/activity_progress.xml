@@ -166,6 +166,6 @@
         android:layout_below="@+id/money_saved"
         android:layout_centerHorizontal="true"
         android:gravity="center"
-        android:layout_marginTop="113dp" />
+        android:layout_marginTop="43dp" />
 
 </RelativeLayout>

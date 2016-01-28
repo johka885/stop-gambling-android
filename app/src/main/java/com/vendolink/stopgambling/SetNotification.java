@@ -54,9 +54,29 @@ public class SetNotification extends BroadcastReceiver {
 
             Bitmap bitmap = BitmapFactory.decodeResource(context.getResources(), R.drawable.ic_launcher);
 
+
+            SharedPreferences settings = context.getSharedPreferences(context.getString(R.string.storagekey), 0);
+            String result = settings.getString("settings_last", "0-0-0");
+
+            Date last = null, date = new Date();
+            DateFormat format = new SimpleDateFormat("yyyy-MM-dd HH:mm", Locale.ENGLISH);
+
+            try {
+                last = format.parse(result);
+            } catch (ParseException e) {
+                return;
+            }
+
+            long diff = date.getTime() - last.getTime();
+
+            long days = diff / (24 * 60 * 60 * 1000);
+
+            String notificationTitle = "Fri från spel i ";
+            notificationTitle += days + (days == 1 ? " dag" : " dagar");
+
             Notification notification = new Notification.Builder(context)
-                    .setContentTitle("Fri från spel i " + 5 + " dagar")
-                    .setContentText("Klicka för att se dina framsteg")
+                    .setContentTitle(notificationTitle)
+                    .setContentText("Klicka här för att se dina framsteg")
                     .setLargeIcon(bitmap)
                     .setSmallIcon(R.drawable.ic_launcher)
                     .setContentIntent(notificationPendingIntent)

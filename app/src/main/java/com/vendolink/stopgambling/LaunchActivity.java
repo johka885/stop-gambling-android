@@ -29,16 +29,16 @@ public class LaunchActivity extends LeanplumFragmentActivity {
         setContentView(R.layout.activity_launch);
 
         if (BuildConfig.DEBUG) {
-            Leanplum.setAppIdForDevelopmentMode(getString(R.string.leamplum_appkey), getString(R.string.leamplum_devkey));
+            Leanplum.setAppIdForDevelopmentMode(getString(R.string.leanplum_appkey), getString(R.string.leamplum_devkey));
         } else {
-            Leanplum.setAppIdForProductionMode(getString(R.string.leamplum_appkey), getString(R.string.leamplum_prodkey));
+            Leanplum.setAppIdForProductionMode(getString(R.string.leanplum_appkey), getString(R.string.leanplum_prodkey));
         }
 
         Leanplum.enableVerboseLoggingInDevelopmentMode();
         Leanplum.start(this);
 
         SharedPreferences settings = getSharedPreferences(getString(R.string.storagekey), 0);
-        Boolean firstLaunch = settings.getBoolean("first_launch", true);
+        final Boolean firstLaunch = settings.getBoolean("first_launch", true);
 
         if (firstLaunch) {
             final Button start = (Button) findViewById(R.id.start_test);
@@ -62,17 +62,19 @@ public class LaunchActivity extends LeanplumFragmentActivity {
                     notificationDays = new int[]{1, 2, 3, 4, 5, 6, 7, 9, 11, 13, 15, 17, 20};
                     notificationMoneySaved = new int[]{1000, 2000, 3000, 4000, 5000, 7500, 10000};
                     notifsPerDay = 3;
-                    notifsPerMoney = 1000;
+                    notifsPerMoney = 2500;
                 } else if (notifications == 3) {
                     notificationDays = new int[]{1, 2, 3, 5, 7, 10, 14, 21, 28};
-                    notificationMoneySaved = new int[]{1000, 2000, 3000, 5000};
+                    notificationMoneySaved = new int[]{1000, 2000, 3000, 5000, 10000};
                     notifsPerDay = 14;
-                    notifsPerMoney = 5000;
+                    notifsPerMoney = 10000;
                 }
 
                 Intent startIntent = new Intent(getPackageName() + ".START_SCHEDULING");
                 sendBroadcast(startIntent);
-                ac.finish();
+                if(!firstLaunch) {
+                    ac.finish();
+                }
             }
         });
 

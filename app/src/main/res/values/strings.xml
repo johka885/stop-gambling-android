@@ -8,11 +8,15 @@
     <string name="ok">OK</string>
     <string name="cancel">Avbryt</string>
 
+    <string name="leanplum_appkey">app_MT9FrXRti5aPs9a5ZkRuRTqDgHf3xkDhMHxc9zVfcMQ</string>
+    <string name="leamplum_devkey">dev_NRT50GZ5hVHclrzOsMRbr0o3kmFnO8AKpJa3E6pdIBE</string>
+    <string name="leanplum_prodkey">prod_O4Qsm7KDyUE0JqnRxUaACsHRlCRj2D4ABI8AP7kYnlw</string>
+
     <!-- Settings screen -->
     <string name="why_stop">Jag vill sluta spela för att:</string>
-    <string name="how_long">Hur många timmar spelar du varje vecka?</string>
+    <string name="how_long">Ungefär hur många timmar spelar du varje vecka?</string>
     <string name="last_played">När spelade du senast?</string>
-    <string name="how_much">Hur mycket pengar förlorar du på spel varje månad?</string>
+    <string name="how_much">Ungefär hur mycket förlorar du på spel varje månad?</string>
 
     <!-- Initial start screen -->
     <string name="welcome">Välkommen</string>
@@ -73,20 +77,22 @@
 
     <!-- Item Picker Amount -->
     <string name="item_picker_amount_1">0</string>
-    <string name="item_picker_amount_2">100</string>
-    <string name="item_picker_amount_3">200</string>
-    <string name="item_picker_amount_4">300</string>
-    <string name="item_picker_amount_5">400</string>
-    <string name="item_picker_amount_6">500</string>
-    <string name="item_picker_amount_7">750</string>
-    <string name="item_picker_amount_8">1000</string>
-    <string name="item_picker_amount_9">1500</string>
-    <string name="item_picker_amount_10">2000</string>
-    <string name="item_picker_amount_11">2500</string>
-    <string name="item_picker_amount_12">3000</string>
-    <string name="item_picker_amount_13">4000</string>
-    <string name="item_picker_amount_14">5000</string>
-    <string name="item_picker_amount_15">Annat</string>
+    <string name="item_picker_amount_2">500</string>
+    <string name="item_picker_amount_3">1000</string>
+    <string name="item_picker_amount_4">1500</string>
+    <string name="item_picker_amount_5">2000</string>
+    <string name="item_picker_amount_6">2500</string>
+    <string name="item_picker_amount_7">3000</string>
+    <string name="item_picker_amount_8">4000</string>
+    <string name="item_picker_amount_9">5000</string>
+    <string name="item_picker_amount_10">7500</string>
+    <string name="item_picker_amount_11">10000</string>
+    <string name="item_picker_amount_12">15000</string>
+    <string name="item_picker_amount_13">20000</string>
+    <string name="item_picker_amount_14">25000</string>
+    <string name="item_picker_amount_15">30000</string>
+    <string name="item_picker_amount_16">40000</string>
+    <string name="item_picker_amount_17">50000</string>
 
     <string name="currency">kr</string>
 
